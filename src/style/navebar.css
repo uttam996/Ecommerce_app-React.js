@@ -1,0 +1,25 @@
+.nav{
+    background-color: white;
+    box-shadow: 0px 2px 0px 0px black;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    
+}
+.logo{
+font-size:2rem;
+font-weight: 600;
+}
+.corner_link>a{
+text-decoration: none;
+margin: 5px;
+cursor: pointer;
+}
+
+.search_input>input{
+ padding: 5px;
+ border: 1px solid grey;
+ width: 140%;
+}
