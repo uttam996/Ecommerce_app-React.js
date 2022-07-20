@@ -12,24 +12,9 @@ export default function Slider() {
      
     },5000)
   }
-  slideshow()
+  // slideshow()
   return (
-    // <div
-    //   className="slider_cont"
-    //   style={{
-    //     backgroundColor: `${sliderItems[slideIndex].bg}`,
-    //   }}
-    // >
-    //   <div className="offer_img" alt-text="error">
-    //     <img src={sliderItems[slideIndex].img} alt="error" srcset="" />
-    //   </div>
-
-    //   <div className="sale_des">
-    //     <h1>{sliderItems[slideIndex].title}</h1>
-    //     <p>{sliderItems[slideIndex].desc}</p>
-    //     <div>SHOP NOW</div>
-    //   </div>
-    // </div>
+ 
    <div className="container">
     {sliderItems.map(function(el){
       return (

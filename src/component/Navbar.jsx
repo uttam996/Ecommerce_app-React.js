@@ -1,21 +1,27 @@
-import React from 'react';
-import  '../style/navebar.css';
-
+import React from "react";
+import "../style/navebar.css";
 
 export default function Navbar() {
   return (
-    <div className='nav'>
-        <div className="search_input">
-            <input type="search" placeholder='Search'></input>
+    <div className="nav">
+      <div className="search_input">
+        <div>
+          <input type="search" placeholder="Search"></input>
         </div>
-        <div className="logo">
-            Mega
+        <div>
+          <button>
+            
+            <i class="fa fa-search"></i>
+          </button>
         </div>
-        <div className="corner_link">
-            <a href='/'>Register</a>
-            <a href='/'>Login</a>
-            <a href='/'>Cart</a>
-        </div>
+      </div>
+      <div className="logo">Mega</div>
+      <div className="corner_link">
+        <a href="/">Register</a>
+        <a href="/">Login</a>
+        <a href="/"> <i class="fa-solid fa-cart-shopping"></i></a>
+       
+      </div>
     </div>
-  )
+  );
 }

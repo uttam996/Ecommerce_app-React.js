@@ -18,8 +18,28 @@ margin: 5px;
 cursor: pointer;
 }
 
-.search_input>input{
- padding: 5px;
- border: 1px solid grey;
- width: 140%;
+
+.search_input{
+    display: flex;
+   
+    width: 200px;
+    height: 30px;
+
 }
+.search_input>div{
+    height: 100%;
+}
+.search_input>div>input,button{
+    height: 100%;
+}
+.search_input>div>button{
+    width: 30px;
+    background-color: #00B4CC;
+    border: none;
+}
+.search_input>div>input{
+    width: 170px;
+    border: 3px solid #00B4CC;
+    padding-left: 10px;
+}
+ 
