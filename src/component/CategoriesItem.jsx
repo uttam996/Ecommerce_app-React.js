@@ -10,10 +10,10 @@ export default function CategoriesItem(props) {
     >
       <img
         style={{
-          height: "70vh",
+          height: "80vh",
           width:"100%"
         }}
-        src={props.img}
+        src={props.img} alt="error"
       />
       <div style={{
         position:"absolute",

@@ -48,3 +48,11 @@ font-size: 2em;
 
 
 }
+
+@media all and (min-width:100px) and (max-width:450px) {
+ 
+  
+}
+@media all and (min-width:451px) and (max-width:750px) {
+ 
+}
