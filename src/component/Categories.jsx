@@ -10,7 +10,7 @@ export default function Categories() {
         marginTop:"20px",
     }} className='Categories_container'>
      {categories.map((el) => {
-       return <CategoriesItem img={el.img} tittle={el.title}/>
+       return <CategoriesItem key={el.id} img={el.img} tittle={el.title} cat={el.cat}/>
      })}
     </div>
   )

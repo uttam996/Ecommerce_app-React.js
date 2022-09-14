@@ -1,0 +1,60 @@
+.register_main{
+    background-color: aqua;
+    background: url("https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZHVjdCUyMGZhc2hpb258ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60");
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    height: 90vh;
+    opacity: 0.6;
+}
+.register_cont{
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color:#fcf1ed ;
+}
+.register_cont h2{
+    text-align: center;
+    margin: 5px 0px 10px 0px;
+    
+}
+.register_form {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+   
+    
+}
+.register_form>input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid gray;
+    
+}
+.register_cont> p {
+    margin-top: 10px;
+    color: gray;
+}
+
+.register_cont b {
+  
+    color: rgb(10, 10, 10);
+}
+
+.crete_btn{
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+}
+
+@media all and (min-width:100px) and (max-width:450px) {
+    .register_form {
+        grid-template-columns: repeat(1,1fr);
+
+       
+        
+    }
+   
+}

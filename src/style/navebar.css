@@ -17,6 +17,11 @@ text-decoration: none;
 margin: 5px;
 cursor: pointer;
 }
+.corner_link>p{
+text-decoration: none;
+margin: 5px;
+cursor: pointer;
+}
 
 
 .search_input{

@@ -23,9 +23,9 @@
 .circle{
    position:absolute;
   background-color: white;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    border-radius: 0%;
+    height: 100%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);

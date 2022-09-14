@@ -25,25 +25,28 @@ export const sliderItems = [
   export const categories = [
     {
       id: 1,
-      img: "https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "SHIRT STYLE!",
+      img: "https://www.prada.com/content/dam/pradabkg_products/P/P3I/P3I42/101RF0002/P3I42_101R_F0002_S_222_MDD.jpg/_jcr_content/renditions/cq5dam.web.hebebed.500.500.jpg",
+      title: "WOMEN",
+      cat:"women"
     },
     {
       id: 2,
-      img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-      title: "LOUNGEWEAR LOVE",
+      img: "https://www.prada.com/content/dam/pradabkg_products/U/UGN/UGN194/11GYF0008/UGN194_11GY_F0008_S_222_MDF.jpg/_jcr_content/renditions/cq5dam.web.hebebed.500.500.jpg",
+      title: "MENS",
+      cat:"mens"
     },
     {
       id: 3,
-      img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-      title: "LIGHT JACKETS",
+      img: "https://mohit-ministore.vercel.app/home/kids.png",
+      title: "KIDS",
+      cat:"kids"
     },
   ];
 
   export const popularProducts = [
     {
       id:1,
-      img:"https://d3o2e4jr3mxnm3.cloudfront.net/Mens-Jake-Guitar-Vintage-Crusher-Tee_68382_1_lg.png",
+      img:"https://ibb.co/Wv27yL4",
     },
     {
       id:2,
@@ -59,7 +62,7 @@ export const sliderItems = [
     },
     {
       id:5,
-      img:"https://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.png",
+      img:"ghttps://images.ctfassets.net/5gvckmvm9289/3BlDoZxSSjqAvv1jBJP7TH/65f9a95484117730ace42abf64e89572/Noissue-x-Creatsy-Tote-Bag-Mockup-Bundle-_4_-2.pn",
     },
     {
       id:6,

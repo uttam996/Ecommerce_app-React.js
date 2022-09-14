@@ -10,7 +10,7 @@ export default function Newsletter() {
         <div className="Newsletter_input">
           <input type="email" />
          
-          <i class="fa-regular fa-envelope"></i>
+          <i  className="fa-regular fa-envelope"></i>
  
         </div>
       </div>

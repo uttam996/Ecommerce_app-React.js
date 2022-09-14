@@ -1,0 +1,52 @@
+.product_cont{
+    margin: 20px;
+    display: flex;
+    height: 90vh;
+}
+
+.pro_img{
+    width:50%;
+}
+.pro_img>img{
+    width:80%;
+    height: 90vh;
+    margin-left: 10%;
+}
+
+.pro_des{
+    padding-left: 20px;
+    width: 50%;
+}
+.pro_des >h2{
+   color: gray;
+   font-weight: 200;
+   font-size: 30px;
+}
+.pro_des >p{
+    margin-top: 20px;
+   color: gray;
+   font-weight: 200;
+}
+.pro_des >p{
+    margin-top: 20px;
+   color: gray;
+   font-weight: 200;
+   margin-bottom: 15px;
+}
+.product_price{
+  
+font-size: 40px;
+}
+
+.pro_sizeAndcoloe{
+    display: flex;
+    width: 200px;
+    
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.inc_btn span{
+ border: 1px solid gray;
+ padding: 5px 10px;
+ margin: 0px 10px;
+}

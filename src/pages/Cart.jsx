@@ -1,8 +1,16 @@
 import React from "react";
 import "../style/Cart.css";
+import Navbar from "../component/Navbar";
+import { useSelector } from "react-redux";
+
 
 export default function Cart() {
+  const Cart =useSelector(state=>state.cart)
+ 
   return (
+    <>
+    <Navbar/>
+  
     <div className="cart_container">
       <h1>Your Bag</h1>
       <div className="checkout_option">
@@ -16,81 +24,74 @@ export default function Cart() {
 
       <div className="order_details">
         <div className="prdoucts_detals">
-          <div className="product_OnCart">
-            <img
-              src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png"
-              alt=""
-              srcset=""
-            />
-            <div>
-            <p>
-              <b>Product : </b>JESSIE THUNDER SHOES
-            </p>
-            <p>
-              <b>Product ID : </b>54422556543356
-            </p>
-            <p>
-              <b>Size : </b>M
-            </p>
-            <p>
-              <b>Colour : </b>REd
-            </p>
+          {Cart.products.map((el)=>{
+            return (
+              <div key={el._id} className="product_OnCart">
+              <img
+                src={el.img}
+                alt=""
+              
+              />
+              <div>
+              <p>
+                <b>Product : </b>{el.title}
+              </p>
+              <p>
+                <b>Product ID : </b>{el._id}
+              </p>
+              <p>
+                <b>Size : </b>{el.size}
+              </p>
+              <p>
+                <b>Colour : </b>
+
+                <div 
+                  style={{
+                    backgroundColor: `${el.color}`,
+                    borderRadius: "50%",
+                    width: "20px",
+                    height: "20px",
+                    display:"inline-block",
+                 
+                    border: "1px solid grey",
+                  }}
+                ></div>
+              </p>
+              </div>
+              <div>
+              
+                <h1>{el.price}RS</h1>
+              </div>
+              
             </div>
-            <div>
-              <p>+ 1 -</p>
-              <h1>30$</h1>
-            </div>
-            
-          </div>
-          <div className="product_OnCart">
-            <img
-              src="https://i.pinimg.com/originals/2d/af/f8/2daff8e0823e51dd752704a47d5b795c.png"
-              alt=""
-              srcset=""
-            />
-            <div>
-            <p>
-              <b>Product : </b>JESSIE THUNDER SHOES
-            </p>
-            <p>
-              <b>Product ID : </b>54422556543356
-            </p>
-            <p>
-              <b>Size : </b>M
-            </p>
-            <p>
-              <b>Colour : </b>REd
-            </p>
-            </div>
-            <div>
-              <p>+ 1 -</p>
-              <h1>30$</h1>
-            </div>
-            
-          </div>
+            )
+          })}
+     
+        
        
         </div>
         <div className="order_summary">
             <h2>Order Summary</h2>
             <div>
                 <p>Subtotal</p>
-                <p>50$</p>
+                <p>{Cart.total}Rs</p>
             </div>
             <div>
                 <p>Shipping</p>
-                <p>50$</p>
+                <p>Free</p>
             </div>
             <div>
                 <p>Disscount</p>
-                <p>150$</p>
+                <p>150Rs</p>
             </div>
             <div>
                 <b>Total</b>
-                <b>50$</b>
+                <b>{Cart.total-150} Rs</b>
             </div>
             <button className="ck_btn">Checkout</button>
         </div>
       </div>
     </div>
+    </>
   );
 }

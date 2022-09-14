@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 export default function CategoriesItem(props) {
   return (
@@ -8,15 +9,20 @@ export default function CategoriesItem(props) {
         width:"31%"
       }}
     >
+      <Link to={`/productlist/${props.cat}`}>
+      
       <img
         style={{
           height: "80vh",
-          width:"100%"
+          width:"100%",
+          opacity:"0.7",
+       
         }}
         src={props.img} alt="error"
       />
       <div style={{
         position:"absolute",
+  
         top:"50%",
         left:"50%",
         width:"100%",
@@ -35,6 +41,7 @@ export default function CategoriesItem(props) {
             fontWeight:"600",
         }} className="shop_btn">SHOP</div>
       </div>
+      </Link>
     </div>
   );
 }

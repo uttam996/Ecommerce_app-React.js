@@ -36,6 +36,9 @@
     border-bottom: 1px solid gray;
     height: 150px;
 }
+.product_OnCart img{
+    width: 200px;
+}
 .product_OnCart>div:nth-child(2){
     color:grey;
   display: flex;
